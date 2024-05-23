@@ -1,0 +1,33 @@
+package DTO;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
+public class Phone {
+
+	
+	@NotBlank(message = "*enter countrycode")
+	@Size(min = 3, max = 3)
+	String countrycode;
+	
+	@NotBlank(message = "*enter Number")
+	String userNumber;
+	public String getCountrycode() {
+		return countrycode;
+	}
+	public void setCountrycode(String countrycode) {
+		this.countrycode = countrycode;
+	}
+	public String getUserNumber() {
+		return userNumber;
+	}
+	public void setUserNumber(String userNumber) {
+		this.userNumber = userNumber;
+	}
+	@Override
+	public String toString() {
+		return "Phone [countrycode=" + countrycode + ", userNumber=" + userNumber + "]";
+	}
+	
+	
+}

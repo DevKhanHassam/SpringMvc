@@ -1,0 +1,20 @@
+package ConfigurationFiles;
+
+import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
+@Configurable
+@ComponentScan(basePackages = "Controllers")
+public class IdealPartnerConfig {
+	
+	
+	@bean
+	public InternalResourceViewResolver viewResolver()
+	{
+		InternalResourceViewResolver viewResolver= new InternalResourceViewResolver();
+		viewResolver.setPrefix("/WEB-INF/Views/");
+		viewResolver.setSuffix("jsp");
+		return viewResolver;
+	}
+}

@@ -1,0 +1,17 @@
+package CustomValidation;
+
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+
+
+//									Provide you validation name and type should be Integer not int
+public class ageValidLogic implements ConstraintValidator<Age, Integer> {
+
+	@Override
+	public boolean isValid(Integer value, ConstraintValidatorContext context) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
+}

@@ -1,0 +1,18 @@
+package DTO;
+
+public class CommunicationDto {
+
+	
+	private String email="murghichor@gmail.com";
+	private  Phone mobileNO;
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	
+	
+	
+}

@@ -1,0 +1,18 @@
+package ConfigurationFiles;
+
+import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.servlet.DispatcherServlet;
+
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+
+public class IdealPartnerConfig implements WebApplicationInitializer {
+
+	@Override
+	public void onStartup(ServletContext servletContext) throws ServletException {
+		
+	DispatcherServlet dispatcherServlet = new DispatcherServlet();
+
+	}
+
+}

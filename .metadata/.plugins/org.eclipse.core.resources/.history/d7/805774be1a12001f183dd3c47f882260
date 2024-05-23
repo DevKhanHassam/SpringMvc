@@ -1,0 +1,29 @@
+package ConfigurationFiles;
+
+import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.XmlWebApplicationContext;
+import org.springframework.web.servlet.DispatcherServlet;
+
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+
+public class IdealPartnerConfig implements WebApplicationInitializer {
+
+	@Override
+	public void onStartup(ServletContext servletContext) throws ServletException {
+		
+		
+		
+	XmlWebApplicationContext xmlWebAppContext = new XmlWebApplicationContext();
+	xmlWebAppContext.setConfigLocation("classpath:web.xml");
+	
+	
+	DispatcherServlet dispatcherServlet = new DispatcherServlet(xmlWebAppContext);
+
+	
+	
+	servletContext.addServlet("FrontController", dispatcherServlet)
+	}
+
+}

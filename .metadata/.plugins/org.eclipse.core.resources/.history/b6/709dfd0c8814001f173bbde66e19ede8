@@ -1,0 +1,30 @@
+package Controller;
+
+import javax.validation.Valid;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+import DTO.FormDto;
+
+@Controller
+public class FormController {
+
+	@RequestMapping("/")
+	public String form(@ModelAttribute("userDetails") FormDto userDetails) {
+
+		return "form";
+	}
+
+	@RequestMapping("/userDetails")
+	public String userDetails(@Valid @ModelAttribute("userDetails") FormDto userDetails, BindingResult bindresult) {
+		if (bindresult.hasErrors()) 
+		{
+			System.out.println("It has error");
+			return "form";
+		}
+		return "userDetails";
+	}
+}

@@ -1,0 +1,22 @@
+package Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import DTO.FormDto;
+
+@Controller
+public class FormController {
+	
+	
+	
+	
+	@RequestMapping("/")
+	public String form(@ModelAttribute("userDetails") FormDto userDetails)
+	{
+		
+		return "form";
+	}
+
+}

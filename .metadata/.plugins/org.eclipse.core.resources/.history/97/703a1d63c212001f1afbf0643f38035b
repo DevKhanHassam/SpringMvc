@@ -1,0 +1,11 @@
+package ConfigurationFiles;
+
+
+
+public class IdealPartnerWebAppInitializer implements AbstractAnnotationConfigDispatcherServletInitializer  {
+
+
+	
+	
+
+}

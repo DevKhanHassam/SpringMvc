@@ -1,0 +1,30 @@
+package DTO;
+
+public class CommunicationDto {
+
+	
+	private String email="murghichor@gmail.com";
+	private  Phone mobileNO;
+	
+	
+	public String getEmail() {
+		return email;
+	}
+	@Override
+	public String toString() {
+		return "CommunicationDto [email=" + email + ", mobileNO=" + mobileNO + "]";
+	}
+	public Phone getMobileNO() {
+		return mobileNO;
+	}
+	public void setMobileNO(Phone mobileNO) {
+		this.mobileNO = mobileNO;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	
+	
+	
+}

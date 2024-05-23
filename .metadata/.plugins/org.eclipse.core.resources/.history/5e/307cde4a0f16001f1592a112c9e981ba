@@ -1,0 +1,11 @@
+package CustomValidation;
+
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+
+public class ageValidLogic
+
+	private Object object; implements ConstraintValidator<Age,int > {
+
+	
+}

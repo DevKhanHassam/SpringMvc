@@ -1,0 +1,39 @@
+package CustomValidation;
+
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+
+
+//									Provide you validation name and type should be Integer not int
+public class ageValidLogic implements ConstraintValidator<Age, Integer> {
+	
+	
+	
+	int lowerLimit;
+	
+	@Override
+	public void initialize(Age age) {
+		
+		this.lowerLimit=age.lowerLimit();
+		
+	}
+
+	@Override
+	public boolean isValid(Integer userInputAge, ConstraintValidatorContext context) {
+		
+		if(userInputAge==null)
+		{
+			return false;
+		}
+		
+		if(userInputAge<lowerLimit || userInputAge==null)
+		{
+			return false;
+		}
+		
+		
+		return true;
+	}
+
+	
+}

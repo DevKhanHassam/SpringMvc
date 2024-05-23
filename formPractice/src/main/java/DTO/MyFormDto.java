@@ -1,0 +1,133 @@
+package DTO;
+
+import java.util.Arrays;
+
+import CustomValidation.Age;
+import jakarta.validation.constraints.AssertTrue;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
+import jakarta.validation.Valid;
+
+public class MyFormDto {
+	
+	
+	CommunicationDto commDto;
+	
+	@Valid
+	public CommunicationDto getCommDto() {
+		return commDto;
+	}
+
+	public void setCommDto(CommunicationDto commDto) {
+		this.commDto = commDto;
+	}
+
+	@Age(lowerLimit = 19)
+	private Integer age;
+	
+
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
+
+	@NotBlank(message = "*Enter your name")
+	
+	@Size(min = 3, max = 20, message = "*Length between 3-20 characters")
+	private String firstName;
+
+	private String lastName;
+
+	@Size(min = 3, max = 20, message = "*Length between 3-20 characters")
+	private char[] password; // we use char[] for password interview question
+
+	private String country;
+	private String[] hobby;
+
+	@NotBlank(message = "*Enter your Gender")
+	private String gender;
+
+	@AssertTrue(message = "* Check the Terms and Conditions")
+	private boolean termAndConditon;
+	
+	
+
+	
+	
+	public boolean isTermAndConditon() {
+		return termAndConditon;
+	}
+
+	public void setTermAndConditon(boolean termAndConditon) {
+		this.termAndConditon = termAndConditon;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public char[] getPassword() {
+		return password;
+	}
+
+	public void setPassword(char[] password) {
+		this.password = password;
+	}
+
+	public String[] getHobby() {
+		return hobby;
+	}
+
+	public void setHobby(String[] hobby) {
+		this.hobby = hobby;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	
+	
+	
+	
+
+	@Override
+	public String toString() {
+		return "MyFormDto [commDto=" + commDto + ", age=" + age + ", firstName=" + firstName + ", lastName=" + lastName
+				+ ", password=" + Arrays.toString(password) + ", country=" + country + ", hobby="
+				+ Arrays.toString(hobby) + ", gender=" + gender + ", termAndConditon=" + termAndConditon + "]";
+	}
+
+	
+
+	
+
+}
