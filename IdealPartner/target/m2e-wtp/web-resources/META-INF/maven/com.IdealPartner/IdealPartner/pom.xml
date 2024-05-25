@@ -22,7 +22,6 @@
 
 	<dependencies>
 
-
 		<dependency>
 			<groupId>jakarta.servlet</groupId>
 			<artifactId>jakarta.servlet-api</artifactId>
@@ -38,16 +37,16 @@
 			<version>6.1.0</version>
 		</dependency>
 
+		
+		
+
+
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.MvcFirst</groupId>
-			<artifactId>MvcFirst</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

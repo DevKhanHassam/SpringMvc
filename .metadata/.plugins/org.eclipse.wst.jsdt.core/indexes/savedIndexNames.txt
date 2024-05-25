@@ -1,13 +1,7 @@
 INDEX VERSION 1.4+C:\Users\salvation\Desktop\spring mvc\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-42542350.index
-1894929755.index
-1398649602.index
 2791698243.index
 1421729627.index
-3801869637.index
-3112735545.index
 607115577.index
 4040607875.index
-1143983930.index
 1240176384.index
 1928409737.index

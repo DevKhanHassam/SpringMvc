@@ -2,3 +2,5 @@ MvcFirst
 MyCafe
 SetDispatcherControllerWithoutXml
 SetDispatcherControllerWithoutXmlIN2lines
+formPractice
+idealPartner

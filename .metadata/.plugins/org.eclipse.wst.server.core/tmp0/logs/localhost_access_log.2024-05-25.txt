@@ -1,0 +1,5 @@
+127.0.0.1 - - [25/May/2024:19:03:19 +0200] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [25/May/2024:19:03:24 +0200] "GET /IdealPartner/ HTTP/1.1" 200 571
+0:0:0:0:0:0:0:1 - - [25/May/2024:19:03:31 +0200] "GET /IdealPartner/process-login?yourName=xox&crushName=bgen HTTP/1.1" 200 278
+0:0:0:0:0:0:0:1 - - [25/May/2024:19:03:33 +0200] "GET /IdealPartner/emailSend HTTP/1.1" 200 361
+0:0:0:0:0:0:0:1 - - [25/May/2024:19:03:36 +0200] "GET /IdealPartner/emailSendSucess?email=lere HTTP/1.1" 200 204
