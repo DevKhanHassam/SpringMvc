@@ -11,6 +11,7 @@ import java.lang.annotation.Target;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
+import jakarta.validation.constraints.NotNull;
 
 @Documented
 @Retention(RetentionPolicy.RUNTIME) // yahan rentionpolicy khud add kai hai
@@ -23,7 +24,11 @@ public @interface Age {
 
 	int lowerLimit() default 18;
 
+	
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //	just copy below code from any validation
+//	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	
 	Class<?>[] groups() default {};
 
 	Class<? extends Payload>[] payload() default {};

@@ -27,7 +27,6 @@ import Formatter.PhoneFormatter;
 public class FormDP implements WebMvcConfigurer {
 
 	@Bean
-
 	public InternalResourceViewResolver viewResolver() {
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
 

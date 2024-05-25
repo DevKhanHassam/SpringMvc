@@ -15,8 +15,8 @@
 	<p>Your Country is ${userDetails.country}</p>
 	<p>
 		Your Hobby's is/are
-	<c:forEach var="temp" items="${userDetails.hobby}">
-		${temp}
+	<c:forEach var="tempIterator" items="${userDetails.hobby}">
+		${tempIterator}
 	</c:forEach>
 	
 

@@ -18,7 +18,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 
 	@Override
 	protected String[] getServletMappings() {
-		String [] arr= {"/web/*"};
+		String [] arr= {"/"};
 		return arr;
 	}
 

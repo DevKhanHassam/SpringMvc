@@ -1,0 +1,30 @@
+package CustomValidation;
+
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+import jakarta.validation.Constraint;
+import jakarta.validation.Payload;
+
+@Documented
+@Retention(RetentionPolicy.RUNTIME) // yahan rentionpolicy khud add kai hai
+@Target(ElementType.FIELD) // yahan element type khud add kai hai
+
+@Constraint(validatedBy = ageValidLogic.class)    // ye bhi khud add krna
+public @interface Age {
+
+	String message() default "{MyKey01}";
+
+	int lowerLimit() default 18;
+
+//	just copy below code from any validation
+	Class<?>[] groups() default {};
+
+	Class<? extends Payload>[] payload() default {};
+}
